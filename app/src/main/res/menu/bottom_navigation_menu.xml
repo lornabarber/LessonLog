@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_lessons"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="@string/title_schedule">
+
+    </item>
+    <item
+        android:id="@+id/ic_book"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:title="@string/title_book">
+
+    </item>
+
+    <item
+        android:id="@+id/ic_payments"
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:title="@string/title_payments">
+
+    </item>
+    <item
+        android:id="@+id/ic_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/title_settings">
+
+    </item>
+</menu>

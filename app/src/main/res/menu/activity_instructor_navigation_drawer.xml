@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lessonRequests"
+            android:icon="@drawable/booking"
+            android:title="Requests" />
+        <item
+            android:id="@+id/schedule"
+            android:icon="@drawable/calendar"
+            android:title="Lesson Schedule" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/payments"
+            android:title="Payments" />
+        <item
+            android:id="@+id/students"
+            android:icon="@drawable/students"
+            android:title="Students" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/edit"
+                android:icon="@drawable/settings"
+                android:title="Edit Details" />
+            <item
+                android:id="@+id/signout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

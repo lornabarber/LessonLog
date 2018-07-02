@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+    </style>
+
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#D93821</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_light</item>
+        <item name="android:textColorHint">#FFA09D9D</item>
+        <item name="android:textColorPrimaryInverse">@color/statusBarColor</item>
+        <item name="android:actionBarStyle">@style/myTheme.ActionBar</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="myTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+    
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="myTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="myTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="myTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextStyle">@style/textStyle</item>
+    </style>
+
+    <style name="textStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFA09D9D</item>
+    </style>
+
+    <!-- Abhishek Panwar -How to Create a Login Page in Android Studio using XML Tutorial
+     | Developing An App |English
+     Link: https://www.youtube.com/watch?v=oVlOXPKV-JU -->
+    <style name="editText_style">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <!-- Abhishek Panwar -How to Create a Login Page in Android Studio using XML Tutorial
+     | Developing An App |English
+     Link: https://www.youtube.com/watch?v=oVlOXPKV-JU -->
+    <style name="button_style">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Abhishek Panwar -How to Create a Login Page in Android Studio using XML Tutorial
+     | Developing An App |English
+     Link: https://www.youtube.com/watch?v=oVlOXPKV-JU -->
+    <style name="textView_style">
+        <item name="android:background">@drawable/text_view_background</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="register_textView">
+        <item name="android:background">@drawable/register_text_view</item>
+    </style>
+
+    <style name="textView1_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+</resources>

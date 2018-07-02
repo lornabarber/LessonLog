@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ie.ucc.bis.a114355681.learnerlog.StudentActivities.BookingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_border"
+            android:elevation="4dp"
+            app:menu="@menu/top_navigation_menu"
+            app:titleTextAppearance="@style/MyTheme.ActionBar.TitleTextStyle">
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtLessonNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson Number"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtType"
+                    android:text="Lesson Type"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/rdoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtType"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="Regular Lesson" />
+
+                <RadioButton
+                    android:id="@+id/rdoTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/rdoRegular"
+                    android:layout_weight="1"
+                    android:text="Pre-Test"
+                    android:buttonTint="@color/colorAccent"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txtDateTime"
+                android:text="Date/Time"/>
+
+            <Button
+                android:id="@+id/btnPickDate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/txtDateResult"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/txtDateResult"
+                android:layout_weight="0.04"
+                android:background="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/txtDateResult"
+                style="@style/textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtDateTime"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Select a date" />
+
+            <Spinner
+                android:id="@+id/spTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/btnPickDate"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.04"
+                android:entries="@array/times"
+                android:padding="5dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_gravity="center"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEnterLocation"
+                android:text="From"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/etLocation"
+                style="@style/textView_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEnterLocation"
+                android:drawableLeft="@drawable/ic_action_location"
+                android:drawablePadding="10dp"
+                android:hint="Enter a location"
+                android:inputType="textPostalAddress" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBook"
+            style="@style/button_style"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="Request Lesson"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomBar"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottomNavView_Bar"
+            android:background="@drawable/bottom_border"
+            app:menu="@menu/bottom_navigation_menu">
+
+        </android.support.design.widget.BottomNavigationView>
+    </RelativeLayout>
+
+</LinearLayout>

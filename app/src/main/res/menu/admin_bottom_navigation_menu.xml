@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_requests"
+        android:icon="@drawable/ic_insert_comment_black_24dp"
+        android:title="@string/title_requests">
+    </item>
+    <item
+        android:id="@+id/ic_schedule"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="@string/title_schedule">
+    </item>
+    <item
+        android:id="@+id/ic_students"
+        android:icon="@drawable/ic_people_outline_black_24dp"
+        android:title="@string/title_students">
+    </item>
+    <item
+        android:id="@+id/ic_payments"
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:title="@string/title_payments">
+    </item>
+</menu>
