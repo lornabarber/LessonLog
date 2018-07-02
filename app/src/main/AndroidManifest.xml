@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ie.ucc.bis.a114355681.learnerlog">
+
+    <!-- - allow internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- allow calendar permissions -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <!-- set app icon and theme below -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/myTheme">
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LoginActivities.MainActivity"
+            android:theme="@style/myTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivities.RegisterActivity"
+            android:theme="@style/myTheme.NoActionBar" />
+        <activity
+            android:name=".StudentActivities.ScheduleActivity"
+            android:label="Lesson Schedule" />
+        <activity
+            android:name=".StudentActivities.EnterDetails"
+            android:label="Update Personal Details" />
+        <activity
+            android:name=".StudentActivities.BookingActivity"
+            android:label="Book a Lesson"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".InstructorActivities.RequestActivity"
+            android:label="Lesson Requests">
+            <intent-filter>
+                <action android:name="ie.ucc.bis.a114355681.learnerlog_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InstructorActivities.InstructorScheduleActivity"
+            android:label="Confirmed Lessons"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".StudentActivities.LessonPaymentActivity"
+            android:label="Payment Options" />
+        <activity
+            android:name=".StudentActivities.ScheduleDetailActivity"
+            android:label="Lesson Details"
+            android:parentActivityName=".StudentActivities.ScheduleActivity" />
+        <activity
+            android:name=".StudentActivities.StudentHomeActivity"
+            android:label="Learner Log" />
+        <activity
+            android:name=".InstructorActivities.AdminHomeActivity"
+            android:label="Learner Log" />
+        <activity
+            android:name=".InstructorActivities.ClientListActivity"
+            android:label="Students"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".InstructorActivities.ClientDetailActivity"
+            android:label="Student Details"
+            android:parentActivityName=".InstructorActivities.ClientListActivity" />
+        <activity android:name=".InstructorActivities.PaymentsReceivedActivity"
+            android:label="Payments"/>
+    </application>
+
+</manifest>
